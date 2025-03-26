@@ -149,7 +149,7 @@ footer {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        max-width: 874px;
+        max-width: 774px;
         width: 100%;
     }
 
@@ -167,28 +167,29 @@ footer {
     }
 
     &__title {
-
+        font-weight: 500;
+        line-height: 120%;
     }
 
     &__content {
         background-color: var(--bg-primary);
-        padding: 98px 112px 92px;
+        padding: 58px 60px 52px;
     }
     
     &__form {
         display: flex;
         flex-direction: column;
-        row-gap: 70px;
-        margin-top: 87px;
+        row-gap: 40px;
+        margin-top: 47px;
     }
 
     &__form-input {
-        font-size: var(--text-size-2);
+        font-size: 18px;
         font-family: "Montserrat", sans-serif;
         background-color: transparent;
         border: none;
         border-bottom: 2px solid #fff;
-        padding-bottom: 45px;
+        padding-bottom: 25px;
         line-height: 150%; /* 36px */
         letter-spacing: 0.48px;
         color: #fff;
@@ -202,7 +203,7 @@ footer {
 
         &_textarea {
             resize: none;
-            height: 167px;
+            height: 127px;
         }
     }
 
@@ -220,7 +221,7 @@ footer {
     &__phone {
         display: block;
         margin-top: 35px;
-        font-size: var(--text-size-2);
+        font-size: 18px;
         font-family: "SFT", serif;
         color: #fff;
         text-decoration: none;
