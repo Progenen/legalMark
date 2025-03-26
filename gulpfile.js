@@ -131,7 +131,7 @@ function svgspriteMono() {
                 transform: [{
                     "svgo": {
                         "plugins": [
-                            { removeAttrs: { attrs: ['class', 'data-name', 'color'] }}
+                            { removeAttrs: { attrs: ['class', 'data-name', 'color', 'fill'] }}
                         ]
                     }
                 }]

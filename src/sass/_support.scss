@@ -58,9 +58,17 @@ $color1: #ff0000;
 
 
 // Fonts
-@include font-face('Roboto', '../fonts/Roboto/Roboto-SemiBold', 600, normal, ttf);
-@include font-face('Roboto', '../fonts/Roboto/Roboto-Medium', 500, normal, ttf);
-@include font-face('Roboto', '../fonts/Roboto/Roboto-Regular', 400, normal, ttf);
+@include font-face('Merriweather', '../fonts/Merriweather/Merriweather-Bold', 700, normal, ttf);
+@include font-face('Merriweather', '../fonts/Merriweather/Merriweather-Regular', 400, normal, ttf);
+
+@include font-face('Montserrat', '../fonts/Montserrat/Montserrat-Bold', 700, normal, ttf);
+@include font-face('Montserrat', '../fonts/Montserrat/Montserrat-Regular', 400, normal, ttf);
+
+@include font-face('SpectralSC', '../fonts/SpectralSC/SpectralSC-Bold', 700, normal, ttf);
+@include font-face('SpectralSC', '../fonts/SpectralSC/SpectralSC-Regular', 400, normal, ttf);
+@include font-face('SpectralSC', '../fonts/SpectralSC/SpectralSC-Medium', 500, normal, ttf);
+
+@include font-face('SFT', '../fonts/SFT/SFT-Regular', 400, normal, otf);
 
 // Vars
 

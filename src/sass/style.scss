@@ -1,8 +1,6 @@
 
 
 // Libs
-@import "../../node_modules/bootstrap/dist/css/bootstrap-grid.css";
-@import "../../node_modules/swiper/swiper-bundle.css";
 
 // Main
 @import "support";
@@ -10,7 +8,5 @@
 @import "script-classes";
 @import "header";
 @import "main";
-@import "blocks/breadcrumbs"; 
-@import "blocks/news";
 @import "footer";
 @import "media";
