@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     headerOffsetInit();
+
     const modals = document.querySelectorAll('.modal');
     const modalForm = document.querySelector('.modal-form');
     const modalThanks = document.querySelector('.modal-thanks');
@@ -56,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     const form = document.querySelector('form');
+
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         modalForm.classList.remove('active');
