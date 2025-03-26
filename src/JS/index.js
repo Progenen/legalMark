@@ -2,12 +2,20 @@ document.addEventListener('DOMContentLoaded', function () {
     function mobMenuInit() {
         const menu = document.querySelector('.header__menu');
         const menuBtn = document.querySelector(".header__burger");
+        const menuLinks = document.querySelectorAll('.header__menu__link');
 
-        menuBtn.addEventListener('click', function () {
+        menuBtn.addEventListener('click', (e) => {
             menu.classList.toggle('active');
             menuBtn.classList.toggle('active');
-        });
+        })
 
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                menu.classList.remove('active');
+                menuBtn.classList.remove('active');
+            });
+        })
         mobMenuOffsetInit();
     }
 
