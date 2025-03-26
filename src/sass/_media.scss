@@ -607,10 +607,12 @@
   //  modal 768
   .modal {
     &__dialog {
+      background-color: var(--bg-primary);
     }
 
     &__content {
       padding: 40px 30px;
+      overflow: scroll;
     }
 
     &__form {

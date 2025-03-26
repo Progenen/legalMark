@@ -45,6 +45,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 modal.classList.remove('active');
             })
         });
+    });
+
+    modals.forEach(modal => {
+        modal.addEventListener('click', function (e) {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        })
     })
 
     const form = document.querySelector('form');
