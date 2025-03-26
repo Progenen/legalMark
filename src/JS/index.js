@@ -27,20 +27,32 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     headerOffsetInit();
-
-    const modal = document.querySelector('.modal');
+    const modals = document.querySelectorAll('.modal');
+    const modalForm = document.querySelector('.modal-form');
+    const modalThanks = document.querySelector('.modal-thanks');
     const modalOpenBtn = document.querySelectorAll('.modal-open');
-    const modalCloseBtn = document.querySelector('.modal-close');
+    const modalCloseBtn = document.querySelectorAll('.modal-close');
 
     modalOpenBtn.forEach((btn) => {
         btn.addEventListener('click', function () {
-            modal.classList.add('active');
+            modalForm.classList.add('active');
         });
     })
 
-    modalCloseBtn.addEventListener('click', function () {
-        modal.classList.remove('active');
-    });
+    modalCloseBtn.forEach((btn) => {
+        btn.addEventListener('click', function () {
+            modals.forEach(modal => {
+                modal.classList.remove('active');
+            })
+        });
+    })
+
+    const form = document.querySelector('form');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        modalForm.classList.remove('active');
+        modalThanks.classList.add('active');
+    })
 
 
     if (window.innerWidth < 992) {

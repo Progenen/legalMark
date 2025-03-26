@@ -133,7 +133,7 @@ footer {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     overflow: auto;
     opacity: 0;
     visibility: hidden;
@@ -231,5 +231,11 @@ footer {
         &:hover {
             color: var(--text-secondary);
         }
+    }
+}
+
+.modal-thanks {
+    .modal__content {
+        height: 774px;
     }
 }
